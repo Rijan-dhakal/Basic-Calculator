@@ -7,6 +7,7 @@ buttons.addEventListener('click', function(el){
     const target = el.target;
     const targetContent = target.textContent;
     if(target.classList.contains('equal')){
+        if(!appendDisplay) return;
         display.value = eval(appendDisplay);
         appendDisplay = '';
 
