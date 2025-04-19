@@ -8,6 +8,7 @@ buttons.addEventListener('click', function(el){
     const targetContent = target.textContent;
     if(target.classList.contains('equal')){
         display.value = eval(appendDisplay);
+        appendDisplay = '';
 
     } else if(target.classList.contains('delete')){
         const tempDisplay = display.value;
